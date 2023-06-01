@@ -6,7 +6,7 @@ import { MovieContext } from "../../context/useMoviesContext";
 
 
 const HomeWrapper = styled.div`
-    background: rgb(137 137 137);
+    background: #fff;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -18,20 +18,13 @@ const HomeWrapper = styled.div`
 `;
 
 const Logo = styled.div`
-display: inline-block;
-padding: 0.5rem 0.8rem;
-background: transparent
-  linear-gradient(180deg, rgba(140, 26, 48, 1) 0%, rgba(104, 25, 115, 1) 100%)
-  0% 0% no-repeat padding-box;
-border-radius: 8px;
-font-size: 1rem;
+font-size: 2rem;
 color: #fff;
-flex-grow: 0;
 z-index: 1;
-width: 10rem;
-margin: 2rem auto;
-padding: 1rem;
+padding: 2rem;
 font-weight: bold;
+color:#fff;
+background: #032541;
 `;
 
 const HomeContainer = () => {

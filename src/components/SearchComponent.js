@@ -13,9 +13,7 @@ const SearchContainer = styled.div`
 const SearchButton = styled.div`
 display: inline-block;
 padding: 0.5rem 0.8rem;
-background: transparent
-  linear-gradient(180deg, rgba(140, 26, 48, 1) 0%, rgba(104, 25, 115, 1) 100%)
-  0% 0% no-repeat padding-box;
+background: #032541;
 border-radius: 8px;
 font-size: 1rem;
 color: #fff;
@@ -64,7 +62,7 @@ const SearchComponent = () => {
 
     return (
         <SearchContainer>
-            <SearchInput placeholder="Search for Movies..." type="text" onChange={(e) => {
+            <SearchInput placeholder="Search  Movies..." type="text" onChange={(e) => {
                 setInput(e.target.value);
             }}/>
             <SearchButton onClick={() => handleInputSearch(input.toLocaleLowerCase() || '')}> Search</SearchButton>

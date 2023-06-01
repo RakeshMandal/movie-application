@@ -7,15 +7,17 @@ const CardContainer = styled.div`
     justify-content: space-evenly;
     font-size: 0.8rem;
     border-radius: 8px;
-    box-shadow: 0 3px 20px #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     background: #fff;
-    padding: 1rem;
     gap: .6rem;
+    border-radius: 7px;
 `;
 
 const CardTitle = styled.div`
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
+    padding-left:1rem;
+    text-align:left;
 `;
 
 const CardImage = styled.img`
@@ -23,15 +25,22 @@ const CardImage = styled.img`
     width: 100%;
     border-radius-top-left: 8px;
     border-radius-top-right: 8px;
+    border-radius: 7px 7px 0 0;
 `;
 
 const CardReleaseDate = styled.div`
     font-weight: 500;
+    color: rgba(0,0,0,0.6);
+    font-size: 1rem;
+    padding-left:1rem;
+    text-align:left;
 `;
 
 const CardOverview = styled.div`
-    width: 100%;
     margin: auto;
+    padding: 1rem;
+    padding-top:0;
+    text-align:left;
 `;
 
 const Cards = ({moviesData}) => {
